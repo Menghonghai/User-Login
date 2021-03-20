@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image--user">
+                <img src="./img/about5.jpg" alt="UerLogin">
+            </div>
+            <div class="title">
+                <h2>Login</h2>
+            </div>
+            <div class="sub--title">
+                <h3>Design & Developer</h3>
+            </div>
+            <div class="input--form">
+                <input type="text" name="Username" id="username" autocomplete="off" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="card--icon">
+                <a href="https://web.facebook.com/menghong.921c0marde1901"> <i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Menghonghai"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCrsDkagtFqAAT5SDXCrHRrg"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/kmstsnehr.purs/"><i class="fab fa-instagram"></i></a>
+
+            </div>
+            <div class="btn">
+                <button type="submit">Cancel</button>
+                <button type="submit" onclick="Login();">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function Login() {
+            var UserName = document.getElementById("username").value;
+            var PassWord = document.getElementById("password").value;
+            if (UserName == "Menghong" && PassWord == "ac0marde1901@") {
+                window.open("/teamtesting/index.html");
+            } else {
+                alert("Please Check Your UserName Or Password!!!");
+            }
+        }
+    </script>
+</body>
+
+</html>
